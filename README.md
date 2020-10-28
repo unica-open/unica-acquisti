@@ -22,16 +22,14 @@ The modules are as follow:
   - [cpassfe]( https://github.com/unica-open/unica-acquisti-cpassfe ): Angular
   application
 - transversal:
-  - [cpassbatch]( https://github.com/unica-open/unica-acquisti-cpassbatch ):
-  CLI/batch projects to be invoked by a scheduler
+  - cpassbatch: CLI/batch projects to be invoked by a scheduler (WIP)
   - [cpassdb]( https://github.com/unica-open/unica-acquisti-cpassdb ): database
   implementation, with all the required scripts
   - [cpassmanual]( https://github.com/unica-open/unica-acquisti-cpassmanual ):
   user manual
   - [cpassreptpl]( https://github.com/unica-open/unica-acquisti-cpassreptpl ):
   report templates to be used by the engine
-  - [cpassscript]( https://github.com/unica-open/unica-acquisti-cpassscript ):
-  CLI scripts to be invoked by a scheduler
+  - cpassscript: CLI scripts to be invoked by a scheduler (WIP)
 
 # Configurations
 For the configuration of each single module, please refer to the `README.md`
@@ -74,11 +72,19 @@ See the list of contributors who participated in this project in file
 [AUTHORS.txt](./AUTHORS.txt).
 
 # Copyrights
-See the list of copyrighters in this project in file Copyrights.txt
+See the list of copyrighters in this project in file Copyrights.txt\
 "&copy; Copyright CSI Piemonte – 2020".
 
 # License
+The source code is licensed under the European Union Public Licence 1.2 or
+later.\
 SPDX-License-Identifier: EUPL-1.2-or-later\
 See the [**"EUPL v1_2 IT-LICENSE.txt"**](./EUPL%20v1_2%20IT-LICENSE.txt)
 and [**"EUPL v1_2 EN-LICENSE.txt"**](./EUPL%20v1_2%20EN-LICENSE.txt) files for
+details.
+
+The documentation is licensed under the Creative Commons Attribution 4.0
+International.\
+SPDX-License-Identifier: CC-BY-4.0\
+See the [**"CC-BY-4.0 EN-LICENSE.txt"**](./CC-BY-4.0%20EN-LICENSE.txt) file for
 details.
