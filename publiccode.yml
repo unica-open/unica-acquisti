@@ -75,6 +75,7 @@ localisation:
     - it
     - en
   localisationReady: true
+logo: unica.png
 maintenance:
   contacts:
     - email: michele.perdono@csi.it
