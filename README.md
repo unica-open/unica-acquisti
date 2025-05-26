@@ -75,7 +75,7 @@ See the list of contributors who participated in this project in file
 
 # Copyrights
 See the list of copyrighters in this project in file Copyrights.txt\
-"&copy; Copyright CSI Piemonte – 2020".
+"&copy; Copyright CSI Piemonte – 2025".
 
 # License
 The source code is licensed under the European Union Public Licence 1.2 or
