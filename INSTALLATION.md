@@ -2,14 +2,17 @@
 
 ## Local environment
 - For the local development/testing environment, at least one Java EE8-compliant
-AS server instance MUST be installer. It is not strictly required to have more
+AS server instance MUST be installed. It is not strictly required to have more
 than one instance of the AS server.
+- A JMS queue MUST be registered with the JEE context and be available to the
+application runtime. The JMS queue MUST be esposed with destination
+`queue/CPassQueue` to allow for registration at startup.
 - A proxy web server MAY be useful for JS development, by defining a proxy to
 the source directories. Depending on the AS server, the proxy may be configured
 on it (please refer to the documentation of the server for informations on how
 to do so).
 - A compliant version of the DBMS MUST be used. The development and runtime are
-based on a PostgreSQL 9.6.10 instance, but any compliant solution should work.
+based on a PostgreSQL 15.4 instance, but any compliant solution should work.
 Note that the following extensions MAY, SHOULD or MUST be installed
   - MUST be installed
     - plpgsql
@@ -23,6 +26,12 @@ Note that the following extensions MAY, SHOULD or MUST be installed
   - MAY be installed
     - pg_buffercache
     - tablefunc
+- The datasource MUST be esposed to the JEE context. The project requires the
+use of two such datasources, one for the business component `cpassbe` and one
+for the reporting component `cpassrepeng`.\
+These datasources MUST be exposes to JNDI with the following names:
+  - `java:jboss/datasources/cpassbeDS`
+  - `java:jboss/datasources/cpassrepengDS`
 - A Dockerized environment MAY help with the local development. We do not as of
 now provide such environment nor configuration.
 - So as to prevent multiple developers to each overwrite one's own properties
@@ -45,8 +54,8 @@ correctly configure the dependencies):
 - Configure the User Manual by deploying the compiled ouput of the `cpassdb`
 project.
 - Install the report templates in the `cpassreptpl` in an accessible folder.
-- Install the scripts in `cpassscript` in an accessible folder in a Linux-like
-environment.
+- Install the scripts in `cpassscript` in an accessible folder in a Linux-like environment.
+- Install the user manual documents, contained in the `cpassmanual` component, under the /htdocs folder of the apache web server. 
 - To test the backend resources, the preferred way is to deploy the backend
 project and use a REST client to access the resources.
 

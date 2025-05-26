@@ -22,14 +22,16 @@ The modules are as follow:
   - [cpassfe]( https://github.com/unica-open/unica-acquisti-cpassfe ): Angular
   application
 - transversal:
-  - cpassbatch: CLI/batch projects to be invoked by a scheduler (WIP)
+  - [cpassbatch]( https://github.com/unica-open/unica-acquisti-cpassbatch ):
+  CLI/batch projects to be invoked by a scheduler
   - [cpassdb]( https://github.com/unica-open/unica-acquisti-cpassdb ): database
   implementation, with all the required scripts
   - [cpassmanual]( https://github.com/unica-open/unica-acquisti-cpassmanual ):
   user manual
   - [cpassreptpl]( https://github.com/unica-open/unica-acquisti-cpassreptpl ):
   report templates to be used by the engine
-  - cpassscript: CLI scripts to be invoked by a scheduler (WIP)
+  - [cpassscript]( https://github.com/unica-open/unica-acquisti-cpassscript ):
+  CLI scripts to be invoked by a scheduler
 
 # Configurations
 For the configuration of each single module, please refer to the `README.md`
@@ -46,12 +48,12 @@ installation process.
 - The Java projects are written in UTF-8 and are compatible with Java 11.0.6
 - Apache Maven 3.6.3 for the building process (the corresponding Maven Wrapper
 scripts are present to enable the compilation even without the dependency)
-- All the libraries listed in the BOM.csv must be accessible to compile the
+- All the libraries listed in the cpass_<<component>>.mainline.sbom.csv must be accessible to compile the
 project. The libraries are published at [http://repart.csi.it](http://repart.csi.it)
 which is set as the Maven repository in the `pom.xml` files
 - A "Java EE8 full profile"-compatible Application Server (tested on JBoss
-Wildfly 17.0.1)
-- The correct version for the DBMS (tested on PostgreSQL 9.6.10)
+Wildfly 23.0.2.Final)
+- The correct version for the DBMS (tested on PostgreSQL 15.4)
 
 # Installing
 Please refer to the [INSTALLATION.md](./INSTALLATION.md) file for the steps
