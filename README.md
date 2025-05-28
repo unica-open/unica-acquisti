@@ -1,7 +1,21 @@
 # Project Title
 UNICA ACQUISTI
 
-Gestione del ciclo passivo
+Gestione del ciclo passivo per gli enti
+
+Unica Acquisti permette di gestire e tenere sotto controllo gli acquisti
+di materiali e di servizi degli enti. Avviene su n fasi:
+- Programmazione triennale degli acquisti che ha il compito di
+  raccogliere formalizzare e trasmettere all'HUB del servizio contratti
+  pubblici (Ministero Infrastrutture e Trasporti), anche con aggiornamenti
+  successivi, le esigenze di acquisto dell'ente.
+- Ciclo passivo che ha lo scopo di raccogliere le richieste di acquisto
+  dei settori dell'ente e approvvigionare con ordini diretti o
+  attraverso il Mercato Elettronico della PA.Il ciclo passivo colloquia 
+  con il sistema di contabilità per verificare la capienza degli impegni 
+  e per concludere l'acquisto con il pagamento della fattura. Esso, inoltre 
+ colloquia con il Nodo di Smistamento ordini per inviare ordini caricati in Unica,
+ acquisire quelli gestiti con MEPA e acquisire i documenti di trasporto elettronici
 
 # Notes
 The following documentation, and all the documentation present in the project
@@ -24,12 +38,12 @@ The modules are as follow:
 - transversal:
   - [cpassbatch]( https://github.com/unica-open/unica-acquisti-cpassbatch ):
   CLI/batch projects to be invoked by a scheduler
-  - [cpassdb]( https://github.com/unica-open/unica-acquisti-cpassdb ): database
+  - [cpassdb]( https://github.com/unica-open/unica-acquisti-cpassdb ): Database
   implementation, with all the required scripts
   - [cpassmanual]( https://github.com/unica-open/unica-acquisti-cpassmanual ):
-  user manual
+  User manual
   - [cpassreptpl]( https://github.com/unica-open/unica-acquisti-cpassreptpl ):
-  report templates to be used by the engine
+  Report templates to be used by the engine
   - [cpassscript]( https://github.com/unica-open/unica-acquisti-cpassscript ):
   CLI scripts to be invoked by a scheduler
 
