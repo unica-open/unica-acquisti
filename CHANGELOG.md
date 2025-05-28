@@ -7,7 +7,7 @@ This project does NOT adhere to [Semantic Versioning](https://semver.org/spec/v2
 
 ### Added
 
-- Programmazione adeguata al nuovo codice appalti dlgs 36 del 31/3/20223
+- Programmazione adeguata al nuovo codice appalti dlgs 36 del 31/3/2023
 - Correzioni bachi ed evolutive atte a migliorare l'iter delle richieste e degli ordini
 - Upgrade to Wildfly 23.0.2.Final and PostgreSQL 15.4
 
