@@ -1,96 +1,92 @@
-# This repository adheres to the publiccode.yml standard by including this 
-# metadata file that makes public software easily discoverable.
-# More info at https://github.com/italia/publiccode.yml
-
-publiccodeYmlVersion: '0.2'
+publiccodeYmlVersion: 0.4.0
+name: Unica Acquisti
+applicationSuite: UNICA
+url: https://github.com/unica-open/unica-acquisti
+landingURL: https://github.com/unica-open/unica-acquisti.git
+softwareVersion: 2.1.0
+releaseDate: 2025-06-26
+logo: unica.png
+platforms:
+  - web
 categories:
   - budgeting
   - erp
   - procurement
-dependsOn:
-  open:
-    - name: Java Runtime
-      optional: false
-      version: '11.0.6'
-    - name: JBoss Wildfly AS
-      optional: false
-      version: '17.0.0'
-    - name: PostgreSQL
-      optional: false
-      version: '9.6'
-description:
-  it:
-    features:
-      - Gestione della Programmazione Biennale degli Acquisti (PBA)
-      - Gestione del ciclo passivo (ordini, evasioni, richieste acquisto, magazzini)
-      - Invio degli ordini elettronici a NSO
-      - Ricezione DDT elettronici da NSO
-    genericName: Gestione Ciclo Passivo
-    longDescription: >
-      ### Gestione del Ciclo Passivo per gli Enti
-      Unica Acquisti permette di gestire e tenere sotto controllo gli acquisti
-      di materiali e di servizi degli enti. Avviene su n fasi:
-        - Programmazione biennale degli acquisti che ha il compito di
-          raccogliere formalizzare e trasmettere al MIT, anche con revisioni
-          successive, le esigenze di acquisto dell'ente.
-        - Ciclo passivo che ha lo scopo di raccogliere le richieste di acquisto
-          dei settori dell'ente e approvvigionare con ordini diretti o
-          attraverso il Mercato Elettronico della PA, è prevista anche una
-          gestione di magazzino. Il ciclo passivo colloquia con il sistema di
-          contabilità per verificare la capienza degli impegni e per concludere
-          l'acquisto con il pagamento della fattura. Esso, inoltre colloquia con
-          il Nodo di Smistamento ordini per inviare ordini caricati in unica,
-          acquisire quelli gestiti con MEPA e acquisire i documenti di trasporto
-          elettronici
-    shortDescription: >-
-      Unica Acquisti è la soluzione per la gestione del Ciclo Passivo dei grandi enti
+usedBy:
+  - CSI Piemonte
+  - Regione Piemonte Giunta
+  - Comune di Torino
+  - Città Metropolitana di Torino
 developmentStatus: stable
+softwareType: standalone/web
 intendedAudience:
   countries:
     - it
   scope:
     - local-authorities
-it:
-  conforme:
-    gdpr: true
-    lineeGuidaDesign: true
-    misureMinimeSicurezza: true
-    modelloInteroperabilita: true
-  countryExtensionVersion: '0.2'
-  piattaforme:
-    anpr: false
-    cie: false
-    pagopa: false
-    spid: false
-  riuso:
-    codiceIPA: csi_piem
-landingURL: 'https://github.com/unica-open/unica-acquisti.git'
+description:
+  it:
+    genericName: Gestione Ciclo Passivo
+    shortDescription: Unica Acquisti è la soluzione per la gestione del Ciclo
+      Passivo dei grandi enti
+    longDescription: >
+      ### Gestione del Ciclo Passivo per gli Enti UNICA acquisti si rivolge al
+      personale dell’ente che svolge compiti di controllo e trasparenza e di
+      approvvigionamento di beni e servizi. Gestisce il processo di
+      approvvigionamento nelle fasi di programmazione ed esecuzione  mediante le
+      seguenti funzionalità: - Programmazione triennale degli acquisti -
+      Richieste di acquisto - Ordini elettronici e DDT elettronico - Evasione
+      dell’ordine e invio delle quote al sistema contabile, per avviare il
+      processo di ricevimento e liquidazione fatture.
+    documentation: https://suiteunica.csi.it/la-suite/unica-acquisti.php
+    features:
+      - Gestione della Programmazione Triennale degli Acquisti (PBA)
+      - Gestione del ciclo passivo (ordini, evasioni, richieste acquisto)
+      - Invio degli ordini elettronici a NSO
+      - Ricezione DDT elettronici da NSO
 legal:
   license: EUPL-1.2
   mainCopyrightOwner: CSI Piemonte
   repoOwner: CSI Piemonte
-  authorsFile: AUTHORS.txt
+  authorsFile: ""
+maintenance:
+  type: internal
+  contacts:
+    - name: Michele Perdonò
+      email: michele.perdono@csi.it
+      phone: ""
+      affiliation: ""
+    - name: Claudio Capone
+      email: claudio.capone@csi.it
+      phone: ""
+      affiliation: ""
 localisation:
+  localisationReady: true
   availableLanguages:
     - it
     - en
-  localisationReady: true
-logo: unica.png
-maintenance:
-  contacts:
-    - email: michele.perdono@csi.it
-      name: Michele Perdonò
-    - email: claudio.capone@csi.it
-      name: Claudio Capone
-  type: internal
-name: Unica Acquisti
-applicationSuite: UNICA
-platforms:
-  - web
-releaseDate: '2020-10-31'
-softwareType: standalone/web
-softwareVersion: '1.0.0'
-url: 'https://github.com/unica-open/unica-acquisti'
-usedBy:
-  - CSI Piemonte
-  - Regione Piemonte Giunta
+dependsOn:
+  open:
+    - name: Java Runtime
+      version: 11.0.6
+      optional: false
+    - name: JBoss Wildfly AS
+      version: 23.0.0
+      optional: false
+    - name: PostgreSQL
+      version: "17.4"
+      optional: false
+it:
+  countryExtensionVersion: "0.2"
+  conforme:
+    lineeGuidaDesign: true
+    modelloInteroperabilita: true
+    misureMinimeSicurezza: true
+    gdpr: true
+  piattaforme:
+    spid: false
+    cie: false
+    anpr: false
+    pagopa: false
+  riuso:
+    codiceIPA: csi_piem
