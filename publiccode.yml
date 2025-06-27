@@ -48,7 +48,6 @@ legal:
   license: EUPL-1.2
   mainCopyrightOwner: CSI Piemonte
   repoOwner: CSI Piemonte
-  authorsFile: ""
 maintenance:
   type: internal
   contacts:
