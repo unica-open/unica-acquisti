@@ -26,7 +26,6 @@ intendedAudience:
     - local-authorities
 description:
   it:
-    genericName: Gestione Ciclo Passivo
     shortDescription: Unica Acquisti è la soluzione per la gestione del Ciclo
       Passivo dei grandi enti
     longDescription: >
