@@ -37,7 +37,7 @@ description:
       Richieste di acquisto - Ordini elettronici e DDT elettronico - Evasione
       dell’ordine e invio delle quote al sistema contabile, per avviare il
       processo di ricevimento e liquidazione fatture.
-    documentation: "https://suiteunica.csi.it/la-suite/unica-acquisti.php"
+    documentation: https://suiteunica.csi.it/la-suite/unica-acquisti.php
     features:
       - Gestione della Programmazione Triennale degli Acquisti (PBA)
       - Gestione del ciclo passivo (ordini, evasioni, richieste acquisto)
