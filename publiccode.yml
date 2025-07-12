@@ -29,14 +29,23 @@ description:
     shortDescription: Unica Acquisti è la soluzione per la gestione del Ciclo
       Passivo dei grandi enti
     longDescription: >
-      ### Gestione del Ciclo Passivo per gli Enti UNICA acquisti si rivolge al
-      personale dell’ente che svolge compiti di controllo e trasparenza e di
-      approvvigionamento di beni e servizi. Gestisce il processo di
-      approvvigionamento nelle fasi di programmazione ed esecuzione  mediante le
-      seguenti funzionalità: - Programmazione triennale degli acquisti -
-      Richieste di acquisto - Ordini elettronici e DDT elettronico - Evasione
-      dell’ordine e invio delle quote al sistema contabile, per avviare il
-      processo di ricevimento e liquidazione fatture.
+      ### Gestione del Ciclo Passivo per gli Enti
+
+      UNICA acquisti si rivolge al personale dell’ente che svolge compiti
+      di  controllo e trasparenza e di approvvigionamento di beni e servizi. 
+
+      Gestisce il processo di approvvigionamento nelle fasi di
+      programmazione  ed esecuzione  mediante le seguenti funzionalità:
+
+      - Programmazione triennale degli acquisti 
+
+      - Richieste di acquisto
+
+      - Ordini elettronici e DDT elettronico
+
+      - Evasione dell’ordine e invio delle quote al sistema contabile, per
+      avviare il processo di ricevimento e liquidazione fatture
+    documentation: https://suiteunica.csi.it/la-suite/unica-acquisti.php
     features:
       - Gestione della Programmazione Triennale degli Acquisti (PBA)
       - Gestione del ciclo passivo (ordini, evasioni, richieste acquisto)
