@@ -50,6 +50,8 @@ description:
       - Gestione del ciclo passivo (ordini, evasioni, richieste acquisto)
       - Invio degli ordini elettronici a NSO
       - Ricezione DDT elettronici da NSO
+    documentation:
+      https://suiteunica.csi.it/la-suite/unica-acquisti.php  
 legal:
   license: EUPL-1.2
   mainCopyrightOwner: CSI Piemonte
