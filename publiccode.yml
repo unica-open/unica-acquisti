@@ -51,7 +51,7 @@ description:
       - Invio degli ordini elettronici a NSO
       - Ricezione DDT elettronici da NSO
     documentation:
-      https://suiteunica.csi.it/la-suite/unica-acquisti.php  
+      https://suiteunica.csi.it
 legal:
   license: EUPL-1.2
   mainCopyrightOwner: CSI Piemonte
